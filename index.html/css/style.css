@@ -279,3 +279,37 @@ footer {
     right: 0;
     background: rgba(0, 0, 0, 0.3) !important;
 }
+@media (max-width: 768px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .card {
+        width: 85%;
+        padding: 15px;
+    }
+
+    .galeria img {
+        width: 80%;
+        max-width: 250px;
+    }
+
+    .btn, .btn-cita {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+}
