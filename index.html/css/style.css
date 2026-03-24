@@ -10,7 +10,6 @@
 body {
     background-color: #0f0f0f;
     color: #fff;
-
     background-image: url("https://image.slidesdocs.com/responsive-images/background/experience-the-charm-of-a-violet-barbershop-concept-with-this-3d-rendered-image-powerpoint-background_b9816252d0__960_540.jpg");
     background-size: cover;
     background-position: center;
@@ -33,22 +32,55 @@ body {
 }
 
 /* Sidebar */
+.sidebar {
+    position: fixed;
+    right: -250px;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    z-index: 9999;
+    padding-top: 60px;
+    transition: 0.3s;
+}
 
+/* Links del menú */
 .sidebar a {
     display: block;
     color: white;
     padding: 15px;
     text-decoration: none;
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    transition: 0.3s;
 }
 
+/* Hover */
 .sidebar a:hover {
-    background: #c59d5f;
-    color: black;
+    background: rgba(255,255,255,0.2);
+    color: white;
 }
 
+/* Sidebar activo */
 .sidebar.active {
     right: 0;
+}
+
+/* Overlay */
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    display: none;
+    z-index: 9998;
+}
+
+#overlay.active {
+    display: block;
 }
 
 /* WhatsApp */
@@ -66,12 +98,12 @@ body {
 
 /* HERO */
 .hero {
-    
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center; 
+    text-align: center;
     padding: 20px;
 }
 
@@ -119,7 +151,7 @@ h2 {
 }
 
 .card {
-    background: rgba(255, 255, 255, 0.08); /* transparente claro */
+    background: rgba(255, 255, 255, 0.08);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     padding: 20px;
@@ -197,47 +229,13 @@ footer {
     color: #aaa;
 }
 
-
-/* ===== MENU TRANSPARENTE (EFECTO VIDRIO) ===== */
-.sidebar {
-    position: fixed;
-    right: -250px;
-    top: 0;
-    width: 250px;
-    height: 100%;
-
-    background: rgba(0, 0, 0, 0.3) !important; /* transparencia */
-    backdrop-filter: blur(12px) !important; /* efecto vidrio */
-    -webkit-backdrop-filter: blur(12px) !important;
-
-    z-index: 9999;
-    padding-top: 60px;
-    transition: 0.3s;
+/* Imágenes responsive */
+img {
+    max-width: 100%;
+    height: auto;
 }
 
-/* links del menú */
-.sidebar a {
-    display: block;
-    color: white;
-    padding: 15px;
-    text-decoration: none;
-    border-bottom: 1px solid rgba(255,255,255,0.2);
-    transition: 0.3s;
-}
-
-/* hover */
-.sidebar a:hover {
-    background: rgba(255,255,255,0.2);
-    color: white;
-}
-
-/* cuando el menú está abierto */
-.sidebar.active {
-    right: 0;
-    background: rgba(0, 0, 0, 0.3) !important;
-}
-
-
+/* Responsive celular */
 @media (max-width: 768px) {
 
     .cards {
@@ -259,13 +257,6 @@ footer {
         max-width: 280px;
     }
 
-    img {
-        max-width: 100%;
-        height: auto;
-    }
-
-}
-@media (max-width: 768px) {
     .hero {
         height: auto;
         padding: 60px 20px;
@@ -278,4 +269,5 @@ footer {
     .hero p {
         font-size: 16px;
     }
+
 }
