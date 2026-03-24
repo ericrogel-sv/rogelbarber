@@ -268,5 +268,7 @@ footer {
         padding: 10px 20px;
         font-size: 14px;
     }
-
+}
+body {
+    zoom:0.85;
 }
