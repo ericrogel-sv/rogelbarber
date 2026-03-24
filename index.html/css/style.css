@@ -380,3 +380,10 @@ h1, h2, p {
     background: rgba(255, 255, 255, 0.2);
     transform: scale(1.05);
 }
+@media (max-width: 768px) {
+    body {
+        background-size: cover;
+        background-position: center;
+        background-attachment: scroll;
+    }
+}
