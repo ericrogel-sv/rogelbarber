@@ -66,7 +66,7 @@ body {
 
 /* HERO */
 .hero {
-    height: 100vh;
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -264,4 +264,18 @@ footer {
         height: auto;
     }
 
+}
+@media (max-width: 768px) {
+    .hero {
+        height: auto;
+        padding: 60px 20px;
+    }
+
+    .hero h2 {
+        font-size: 24px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
 }
