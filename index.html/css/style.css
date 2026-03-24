@@ -236,38 +236,57 @@ footer {
     right: 0;
     background: rgba(0, 0, 0, 0.3) !important;
 }
+
+
 @media (max-width: 768px) {
 
+    * {
+        max-width: 100% !important;
+    }
+
+    html {
+        font-size: 14px;
+    }
+
     body {
-        font-size: 14px;
+        margin: 0;
+        padding: 0;
     }
 
-    h1 {
-        font-size: 22px;
+    h1 { font-size: 22px !important; }
+    h2 { font-size: 20px !important; }
+    p  { font-size: 14px !important; }
+
+    .hero {
+        height: auto;
+        padding: 40px 20px;
     }
 
-    h2 {
-        font-size: 20px;
-    }
-
-    p {
-        font-size: 14px;
+    .cards {
+        flex-direction: column;
+        align-items: center;
     }
 
     .card {
-        width: 85%;
-        padding: 15px;
+        width: 90% !important;
+        max-width: 300px;
+    }
+
+    .galeria {
+        flex-direction: column;
+        align-items: center;
     }
 
     .galeria img {
-        width: 80%;
-        max-width: 250px;
+        width: 90% !important;
+        max-width: 280px;
     }
 
-    .btn, .btn-cita {
-        padding: 10px 20px;
-        font-size: 14px;
+    img {
+        width: 100% !important;
+        height: auto !important;
     }
+
 }
 body {
     zoom:0.85;
