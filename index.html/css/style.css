@@ -388,3 +388,14 @@ h1, h2, p {
     font-size: 25px;
     cursor: pointer;
 }
+body {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media (max-width: 768px) {
+    body {
+        background-attachment: scroll;
+    }
+}
