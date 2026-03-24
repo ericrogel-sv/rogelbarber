@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ROGEL BARBERSHOP</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -15,10 +16,12 @@
 <!-- Menú lateral -->
 <div id="sidebar" class="sidebar">
     <h2 style="text-align:center; color:#c59d5f;">RogelBarber</h2>
-    <a href="#galeria">galeria</a>
-    <a href="#precios">precios</a>
-    <a href="#agendar cita">agendar cita </a>
-    <a href="#direccion">direccion</a>
+    <div class="contact-card">
+    <a href="#Galeria">Galeria</a>
+    <a href="#Precios">Precios</a>
+    <a href="#Agendar cita">Agendar cita </a>
+    <a href="#Direccion">Direccion</a>
+    </div>
 </div>
 <div id="overlay" onclick="toggleMenu()"></div>
 <!-- Script -->
@@ -30,13 +33,18 @@ function toggleMenu() {
 </script>
 
 <section id="inicio" class="hero">
+
     <h2>Estilo y Elegancia para Caballeros</h2>
+    <div class="contact-card">
     <p>"La barbería es el arte de crear sin goma de borrar"</p>
+    </div>
 
 </section>
 
-<section id="galeria">
-    <h2>galeria</h2>
+<section id="Galeria">
+    <div class="contact-card">
+    <h2>Galeria</h2>
+    </div>
     <div class="galeria">
         <img src="galeria/foto1.jpg">
         <img src="galeria/foto2.jpg">
@@ -44,39 +52,63 @@ function toggleMenu() {
     </div>
 </section>
 
-<section id="precios">
-    <h2>precios</h2>
+<section id="Precios">
+    <div class="contact-card">
+    <h2>Precios</h2>
+    </div>
     <div class="cards">
+    <div class="contact-card">
         <div class="card">
             <h3>Corte de cabello</h3>
             <p>$2.50</p>
         </div>
+    </div>
+    <div class="contact-card">
         <div class="card">
             <h3>Afeitado</h3>
             <p>$2.00</p>
         </div>
+    </div>
+    <div class="contact-card">
         <div class="card">
             <h3>Corte + Barba</h3>
             <p>$5.00</p>
         </div>
-        <div class="card">
+    </div>
+    <div class="contact-card">
+         <div class="card">
             <h3>Corte + Diseño</h3>
             <p>$6.50</p>
-        </div>
+         </div>
+    </div>
     </div>
 </section>
 
-<a href="https://wa.me/50375059308" class="whatsapp" target="_blank">💬</a>
 
-<section id="agendar cita">
-    <h2>agendar cita</h2>
-    <p> PRESIONAR EL LOGO DE WHATSAPP Y ENVIAR MENSAJE AHI PARA OBTENER INFORMACION SOBRE TU CITA!!</p>
-    <p>📞 7505-9308</p>
-</section>
+<section id="Agendar cita" class="contacto">
+    <div class="contact-card">
+  <h2>Agendar cita</h2>
+    </div>
+  <div class="contact-card">
+  <p>💬Presiona el boton verde para agendar tu cita en WhatsApp.</p>
+  
+    <p>📅 Lunes a sábado</p>
+    <p>⏰ 9:00 AM - 7:00 PM</p>
+    <p>💬 Respuesta rápida por WhatsApp</p>
 
-<section id="direccion">
-    <h2>direccion</h2>
-    <p>📍 Plaza mundo Apopa, San Salvador, El Salvador</p>
+    <a href="https://wa.me/50375059308?text=Hola%2C%20quiero%20agendar%20una%20cita%0ADia%3A%20_____%0AHora%3A%20_____%0AServicio%3A%20_____" 
+       target="_blank" class="btn-cita">
+      Agendar cita
+    </a>
+  </div>
+
+<section id="Direccion" class="contacto"></section>
+<div class="contact-card">
+  <h2>Direccion</h2>
+</div>
+  <div class="contact-card">
+    <p>📍 Plaza Mundo Apopa, San Salvador, El Salvador</p>
+  </div>
 </section>
 
 <footer>
