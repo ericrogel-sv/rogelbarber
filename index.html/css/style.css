@@ -378,3 +378,13 @@ h1, h2, p {
     right: 0;
     background: rgba(0, 0, 0, 0.3) !important;
 }
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+}
