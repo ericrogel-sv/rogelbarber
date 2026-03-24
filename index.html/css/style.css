@@ -86,11 +86,6 @@ body {
     align-items: center;
     text-align: center; 
     padding: 20px;
-    @media (max-width: 768px) {
-    body {
-        background-attachment: scroll;
-    }
-}
 }
 
 .hero h2 {
@@ -385,5 +380,10 @@ h1, h2, p {
         background-size: cover;
         background-position: center;
         background-attachment: scroll;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
     }
 }
