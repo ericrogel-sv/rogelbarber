@@ -1,1 +1,0 @@
-document.querySelectorAll('section').forEach(s=>{s.style.opacity=1;});
