@@ -1,0 +1,5 @@
+*{box-sizing:border-box}body{margin:0;font-family:Arial;background:#eef3f8;color:#222}
+.hero{background:#0b3d91;color:#fff;padding:20px}.banner{text-align:center;padding:30px 10px}
+section{padding:20px}.card{background:#fff;border-radius:12px;padding:15px;margin:15px 0;box-shadow:0 2px 8px rgba(0,0,0,.15)}
+.img{height:140px;background:#d9d9d9;border-radius:8px;display:flex;align-items:center;justify-content:center}
+@media(min-width:768px){body{max-width:500px;margin:auto}}
